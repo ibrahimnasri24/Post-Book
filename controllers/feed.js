@@ -29,8 +29,15 @@ exports.createPost = (req, res, next) => {
   const title = req.body.title;
   const content = req.body.content;
   //Create post in db
+  console.log('Post created successfully!');
   res.status(201).json({
     message: 'Post created successfully!',
-    post: { id: new Date().toISOString(), title: title, content: content }
+    post: {
+      _id: new Date().toISOString(),
+      title: title,
+      content: content,
+      creator: { name: 'Ibrahim' },
+      createdAt: new Date()
+    }
   });
 };
