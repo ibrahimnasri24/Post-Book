@@ -8,7 +8,6 @@ const Post = require('../models/post');
 exports.getPosts = (req, res, next) => {
   Post.find()
     .then((posts) => {
-      console.log(posts);
       res
         .status(200)
         .json({ message: 'Fetched posts successfully', posts: posts });
@@ -115,6 +114,32 @@ exports.updatePost = (req, res, next) => {
     })
     .then((result) => {
       res.status(200).json({ message: 'Post updated', post: result });
+    })
+    .catch((err) => {
+      if (!err.statusCode) {
+        err.status = 500;
+      }
+      next(err);
+    });
+};
+
+exports.deletePost = (req, res, next) => {
+  const postId = req.params.postId;
+  Post.findById(postId)
+    .then((post) => {
+      //Check logged in user
+      if (!post) {
+        const error = new Error('Could not find post');
+        error.statusCode = 404;
+        throw error;
+      }
+
+      clearImage(post.imageUrl);
+      return Post.findByIdAndRemove(postId);
+    })
+    .then((result) => {
+      console.log(result);
+      res.status(200).json({ message: 'Post deleted successfully' });
     })
     .catch((err) => {
       if (!err.statusCode) {
