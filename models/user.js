@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 const userSchema = new mongoose.Schema({
   email: {
@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    required: true
+    default: 'I am new!'
   },
   posts: [
     {
@@ -26,4 +26,4 @@ const userSchema = new mongoose.Schema({
   ]
 });
 
-exports.User = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema);

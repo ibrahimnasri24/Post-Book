@@ -23,7 +23,7 @@ router.put(
     body('password').trim().isLength({ min: 5 }),
     body('name').trim().not().isEmpty()
   ],
-  authController
+  authController.signup
 );
 
 module.exports = router;
