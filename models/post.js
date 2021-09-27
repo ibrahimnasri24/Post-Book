@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 const postSchema = new mongoose.Schema(
   {
@@ -16,7 +16,8 @@ const postSchema = new mongoose.Schema(
       required: true
     },
     creator: {
-      type: Object,
+      type: Schema.Types.ObjectId,
+      ref: 'User',
       required: true
     }
   },
