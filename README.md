@@ -51,9 +51,13 @@ I am learning how to design a restfull api in nodeJS and connecting it to a reac
 
 ### Built With
 
-- Backend: [Node](https://nodejs.org/en/)
-- Frontend: [React](https://reactjs.org/)
-- Database: [MongoDB](https://www.mongodb.com/)
+- Backend:
+- [Node](https://nodejs.org/en/)
+- [Express](https://expressjs.com/)
+- Frontend:
+- [React](https://reactjs.org/)
+- Database:
+- [MongoDB](https://www.mongodb.com/)
 
 <!-- GETTING STARTED -->
 
@@ -117,7 +121,7 @@ Project Link: [https://github.com/ibrahimnasri24/Post-Book](https://github.com/i
 ## Acknowledgements
 
 - [Academind](https://academind.com/)
-- [Best-README-Templat](https://github.com/othneildrew/Best-README-Template)
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
