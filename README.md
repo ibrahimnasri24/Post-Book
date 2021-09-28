@@ -45,9 +45,9 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-I am learning how to design a restfull api in nodeJS, and this application is
+I am learning how to design a restfull api in nodeJS and connecting it to a react web apllication. This application represents the fruits of those efforts.
 
 ### Built With
 
@@ -116,9 +116,8 @@ Project Link: [https://github.com/ibrahimnasri24/Post-Book](https://github.com/i
 
 ## Acknowledgements
 
-- []()
-- []()
-- []()
+- [Academind](https://academind.com/)
+- [Best-README-Templat](https://github.com/othneildrew/Best-README-Template)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
