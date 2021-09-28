@@ -47,17 +47,18 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-I am learning how to design a restfull api in nodeJS and connecting it to a react web apllication. This application represents the fruits of those efforts.
+I am learning how to design a restfull api using nodeJS. This application represents the fruits of those efforts.
+I focused on writing the node server. Whereas the react one is coppied from academind since the purpose of this project is designing the api, database and connecting it to the frontend react server.
 
 ### Built With
 
 - Backend:
-- [Node](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
+  -- [Node](https://nodejs.org/en/)
+  -- [Express](https://expressjs.com/)
 - Frontend:
-- [React](https://reactjs.org/)
+  -- [React](https://reactjs.org/)
 - Database:
-- [MongoDB](https://www.mongodb.com/)
+  -- [MongoDB](https://www.mongodb.com/)
 
 <!-- GETTING STARTED -->
 
