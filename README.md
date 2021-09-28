@@ -1,10 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -17,8 +10,6 @@
     <a href="https://github.com/ibrahimnasri24/Post-Book"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ibrahimnasri24/Post-Book">View Demo</a>
-    ·
     <a href="https://github.com/ibrahimnasri24/Post-Book/issues">Report Bug</a>
     ·
     <a href="https://github.com/ibrahimnasri24/Post-Book/issues">Request Feature</a>
@@ -57,18 +48,12 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 I am learning how to design a restfull api in nodeJS, and this application is
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
 
 ### Built With
 
-Backend:
-
-- [Node](https://nodejs.org/en/)
-  Frontend:
-- [React](https://reactjs.org/)
-  Database:
-- [MongoDB](https://www.mongodb.com/)
+- Backend: [Node](https://nodejs.org/en/)
+- Frontend: [React](https://reactjs.org/)
+- Database: [MongoDB](https://www.mongodb.com/)
 
 <!-- GETTING STARTED -->
 
