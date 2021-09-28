@@ -44,7 +44,7 @@ exports.login = (req, res, next) => {
   User.findOne({ email: email })
     .then((user) => {
       if (!user) {
-        const error = new Error('Email not foune');
+        const error = new Error('Email not found');
         error.status = 401;
         throw error;
       }
@@ -66,6 +66,49 @@ exports.login = (req, res, next) => {
         { expiresIn: '1h' }
       );
       res.status(200).json({ token: token, userId: loadedUser._id.toString() });
+    })
+    .catch((err) => {
+      if (!err.statusCode) {
+        err.status = 500;
+      }
+      next(err);
+    });
+};
+
+exports.getStatus = (req, res, next) => {
+  const userId = req.userId;
+  User.findById(userId)
+    .then((user) => {
+      if (!user) {
+        const error = new Error('User not found');
+        error.status = 401;
+        throw error;
+      }
+      res.status(200).json({ status: user.status });
+    })
+    .catch((err) => {
+      if (!err.statusCode) {
+        err.status = 500;
+      }
+      next(err);
+    });
+};
+
+exports.updateStatus = (req, res, next) => {
+  const userId = req.userId;
+  const status = req.body.status;
+  User.findById(userId)
+    .then((user) => {
+      if (!user) {
+        const error = new Error('User not found');
+        error.status = 401;
+        throw error;
+      }
+      user.status = status;
+      return user.save();
+    })
+    .then((result) => {
+      res.status(200).json({ message: 'Status update successfull' });
     })
     .catch((err) => {
       if (!err.statusCode) {
